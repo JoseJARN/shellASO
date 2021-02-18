@@ -1,3 +1,12 @@
 #!/bin/bash
-echo Los archivos que has pasado por parámetro son los siguientes $*
-cat $*
+if [ $# -eq 0 ];then
+    echo "Error, no me has pasado ningún parámetro"
+    exit 1
+fi
+
+for fich in $*;do
+    if [ -f $fich ];then
+        echo "Nombre: $fich"
+        cat $fich
+    fi
+done    
