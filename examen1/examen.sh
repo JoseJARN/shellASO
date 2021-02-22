@@ -16,7 +16,7 @@ elif [ $# -eq 1 ];then
         #Almacenamos el conteo de ficheros del directorio que nos diga en la variable numeroficheros
         numeroficheros=$(find ./$1 -type f | wc -l)
         if [ $numero1 -gt $numeroficheros ];then
-            rm -f ./$1
+            rm -ri ./$1
         fi
     fi
     #Si el parámetro es un nombre de usuario del sistema
