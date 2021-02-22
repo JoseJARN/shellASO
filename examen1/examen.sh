@@ -26,7 +26,7 @@ elif [ $# -eq 1 ];then
         echo $1 es un usuario del sistema
         echo "su identificador de usuario es" `id -u $1`
         echo "su identificador de grupo es" `id -g $1`
-        echo /home/$1 es la carpeta home de este usuario
+        grep $1: /etc/passwd | cut -d: -f6
     fi
     #Este último if funciona perfectamente pero lo he comentado porque no me funcionan los demás si lo descomento
 #Si me pasa más de un parámetro
