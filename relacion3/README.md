@@ -17,13 +17,13 @@ el número de parámetros y que se pueda acceder al fichero.
 e5.sh [opciones] [argumentos]
 Al ejecutar el shell-script, este deberá mostrar el nombre del usuario que lo ejecuta. Las
 opciones que puede recibir el shell son las siguientes:
-● Sin opciones ni argumentos, deberá mostrar el contenido del propio Shell-script.
-● -m Comprobará que los argumentos (tras -m) son ficheros, en cuyo caso muestra su
+- Sin opciones ni argumentos, deberá mostrar el contenido del propio Shell-script.
+- -m Comprobará que los argumentos (tras -m) son ficheros, en cuyo caso muestra su
 contenido por pantalla.
-● -x Deberá comprobar que los argumentos (tras -x) son programas ejecutables, en cuyo
+- -x Deberá comprobar que los argumentos (tras -x) son programas ejecutables, en cuyo
 caso los ejecutará.
-● -p Mostrará los propietarios de los ficheros que se reciben por parámetro
-● Cada operación será implementada haciendo uso de funciones.
+- -p Mostrará los propietarios de los ficheros que se reciben por parámetro
+- Cada operación será implementada haciendo uso de funciones.
 6. Implementar un script que muestre el siguiente menú:
 1 - Sumar
 2 - Restar
