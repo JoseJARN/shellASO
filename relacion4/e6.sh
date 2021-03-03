@@ -34,7 +34,7 @@ function cadena(){
 }
 
 opcion=9
-while [ $opcion -gt 4 ] || [ $opcion -lt 1 ];do
+while [ $opcion -gt 4 ] || [ $opcion -lt 1 ] || [ $opcion -ne 4 ];do
     if [ $# -ne 1 ];then
         echo "Debes pasarme un fichero como parámetro"
         exit 1
@@ -51,13 +51,10 @@ while [ $opcion -gt 4 ] || [ $opcion -lt 1 ];do
     #Ahora ponemos el case con las diferentes opciones
     case $opcion in
     1) buscar $1
-        ./$0 $1
         ;;
     2) permisos $1
-        ./$0 $1
         ;;
     3) cadena $1
-        ./$0 $1
         ;;
     4) echo "¡Has salido del programa correctamente!"
         ;;
